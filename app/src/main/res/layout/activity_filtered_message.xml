@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="7"
+    tools:context=".FilteredMessageActivity">
+
+    <include
+        android:id="@+id/filtered_tool_bar"
+        layout="@layout/layout_tool_bar" />
+
+    <EditText
+        android:inputType="text"
+        android:id="@+id/filtered_input"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_margin="5dp"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
+        android:maxLength="160"
+        android:background="@drawable/background_edit_text"
+        android:hint="@string/filtre_girin" />
+
+    <Button
+        android:id="@+id/button_filter"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_margin="5dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/background_button"
+        android:text="@string/filtrele" />
+
+    <EditText
+        android:inputType="text|textMultiLine"
+        android:id="@+id/filtered_input_message"
+        android:background="@drawable/background_edit_text"
+        android:hint="@string/mesaj_girin"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:gravity="start"
+        android:maxLength="160"
+        android:layout_height="0dp"
+        android:layout_weight="3"/>
+
+    <TextView
+        android:id="@+id/filtered_total_size"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="5dp"/>
+
+
+    <Button
+        android:id="@+id/send_filtered_message"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColorHint="@color/colorPrimary"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/background_button"
+        android:text="@string/göndermeyi_baslat" />
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/main_tool_bar"
+        layout="@layout/layout_tool_bar" />
+
+    <EditText
+        android:id="@+id/input_message"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:layout_margin="5dp"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
+        android:padding="10dp"
+        android:background="@drawable/background_edit_text"
+        android:hint="@string/mesaj_girin"
+        android:inputType="text|textMultiLine"
+        android:maxLength="160"
+        android:gravity="start" />
+
+    <Button
+        android:id="@+id/send_message_all"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/background_button"
+        android:layout_marginTop="10dp"
+        android:text="@string/tüm_listeye_gönder" />
+
+    <Button
+        android:id="@+id/send_message_filter"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/background_button"
+        android:text="@string/filtreli_gönder" />
+
+</LinearLayout>

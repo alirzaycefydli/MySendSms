@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Send Sms</string>
+    <string name="mesaj_girin">Mesajı Giriniz...</string>
+    <string name="tüm_listeye_gönder">Tüm Listeye Gönder</string>
+    <string name="filtreli_gönder">Filtreli Gönder</string>
+    <string name="mesaj_filtrele">Filtreli Mesaj</string>
+    <string name="göndermeyi_baslat">Göndermeyi Başlat</string>
+    <string name="filtre_girin">Filtre Giriniz</string>
+    <string name="filtrele">Filtrele</string>
+    <string name="toplam_gönderilecek_sayisi">Toplam Gönderilecek Sayısı:</string>
+    <string name="sms_gönderimi_tamamlandı">Sms gönderimi tammalandı!</string>
+    <string name="alan_bos_birakilamaz">Alan boş bırakılamaz !</string>
+</resources>
