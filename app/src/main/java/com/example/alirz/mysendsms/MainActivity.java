@@ -22,8 +22,6 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.example.alirz.mysendsms.StaticClass.listContact;
-
 public class MainActivity extends AppCompatActivity {
     //wids
     private Toolbar mToolBar;
@@ -52,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
                     Manifest.permission.READ_CONTACTS)) {
                 // Show an explanation to the user *asynchronously* -- don't block
                 // this thread waiting for the user's response! After the user
-                // sees the explanation, try again to request the permission.
+                // sees the explanation, try again to request the permission..
             } else {
                 ActivityCompat.requestPermissions(MainActivity.this,
                         new String[]{Manifest.permission.READ_CONTACTS},
@@ -60,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         } else {
+
             getContacs();
 
         }
@@ -165,26 +164,24 @@ public class MainActivity extends AppCompatActivity {
         if (!TextUtils.isEmpty(message)) {
             for (int i = 0; i < list.size(); i++) {
 
-                // sendSMS(list.get(i).getNumberEdit(), StaticClass.message);
-
                 sendSMS(list.get(i).getNumberEdit(), message);
-
-
             }
             Toast.makeText(MainActivity.this, getString(R.string.sms_gönderimi_tamamlandı), Toast.LENGTH_SHORT).show();
-        }else{
+        } else {
             Toast.makeText(this, getString(R.string.alan_bos_birakilamaz), Toast.LENGTH_SHORT).show();
         }
-
-
-
-
-
     }
 
     // Bu method Sms gönderme işlemini yapıyor
     private void sendSMS(String phoneNumber, String message) {
         SmsManager sms = SmsManager.getDefault();
         sms.sendTextMessage(phoneNumber, null, message, null, null);
+
+        String gen_failure = String.valueOf(SmsManager.RESULT_ERROR_GENERIC_FAILURE);
+        String no_service = String.valueOf(SmsManager.RESULT_ERROR_NO_SERVICE);
+        String null_pdu = String.valueOf(SmsManager.RESULT_ERROR_NULL_PDU);
+        String radio_off = String.valueOf(SmsManager.RESULT_ERROR_RADIO_OFF);
+
+
     }
 }
