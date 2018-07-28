@@ -60,7 +60,6 @@ public class MainActivity extends AppCompatActivity {
             getContacs();
 
         }
-
         mMessage = findViewById(R.id.input_message);
         sendMessageButton = findViewById(R.id.send_message_all);
         filterButton = findViewById(R.id.send_message_filter);

@@ -156,7 +156,6 @@ public class FilteredMessageActivity extends AppCompatActivity {
             Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
         }
 
-
     }
 
     // Bu method Sms gönderme işlemini yapıyor

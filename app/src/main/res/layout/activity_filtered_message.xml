@@ -64,5 +64,4 @@
         android:text="@string/göndermeyi_baslat"
         android:textColor="@color/colorPrimary"
         android:textColorHint="@color/colorPrimary" />
-
 </LinearLayout>

@@ -45,5 +45,4 @@
         android:textColor="@color/colorPrimary"
         android:background="@drawable/background_button"
         android:text="@string/filtreli_gönder" />
-
 </LinearLayout>
