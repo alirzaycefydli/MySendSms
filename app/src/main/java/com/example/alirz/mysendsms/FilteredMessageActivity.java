@@ -126,14 +126,12 @@ public class FilteredMessageActivity extends AppCompatActivity {
                 btnSend.setEnabled(true);
 
 
-
             } else {
                 btnSend.setEnabled(false);
             }
         } catch (Exception e) {
             Toast.makeText(this,  e.getMessage(), Toast.LENGTH_SHORT).show();
         }
-
     }
 
     // Bu method listedeki tüm kullanıcılara sms gönderiyor.

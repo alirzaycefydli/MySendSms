@@ -52,7 +52,6 @@
         android:textColor="@color/colorPrimary"
         android:textColorHint="@color/colorPrimary" />
 
-
     <Button
         android:id="@+id/send_filtered_message"
         android:layout_width="match_parent"

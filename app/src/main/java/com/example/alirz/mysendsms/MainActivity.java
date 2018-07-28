@@ -93,12 +93,10 @@ public class MainActivity extends AppCompatActivity {
                         topluGonder(listContact);
                     }
                 }
-
             }
         });
 
     }
-
 
     private void getContacs() {
         ContentResolver contentResolver = getContentResolver();
