@@ -48,9 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
             if (ActivityCompat.shouldShowRequestPermissionRationale(MainActivity.this,
                     Manifest.permission.READ_CONTACTS)) {
-                // Show an explanation to the user *asynchronously* -- don't block
-                // this thread waiting for the user's response! After the user
-                // sees the explanation, try again to request the permission..
+
             } else {
                 ActivityCompat.requestPermissions(MainActivity.this,
                         new String[]{Manifest.permission.READ_CONTACTS},

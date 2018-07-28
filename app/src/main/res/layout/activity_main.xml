@@ -25,7 +25,6 @@
         android:hint="@string/mesaj_girin"
         android:inputType="text|textMultiLine"
         android:gravity="start" />
-
     <Button
         android:id="@+id/send_message_all"
         android:layout_width="match_parent"

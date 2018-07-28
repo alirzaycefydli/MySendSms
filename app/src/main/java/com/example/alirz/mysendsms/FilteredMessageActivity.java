@@ -136,7 +136,7 @@ public class FilteredMessageActivity extends AppCompatActivity {
 
     }
 
-    // Bu method listedeki tüm kullanıcılara sms gönderiyor
+    // Bu method listedeki tüm kullanıcılara sms gönderiyor.
     private void topluGonder(List<ModelContact> list) {
         try {
             if (!TextUtils.isEmpty(message)) {
